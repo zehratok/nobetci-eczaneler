@@ -1,4 +1,5 @@
+import About from './About/About';
 import Home from './Home/Home';
-import Settings from './Settings/Settings';
+import Map from './Map/Map';
 
-export { Home, Settings };
+export { About, Home, Map };

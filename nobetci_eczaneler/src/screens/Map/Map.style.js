@@ -1,12 +1,9 @@
 import { StyleSheet } from "react-native";
-import { red, white } from "../style/colors";
-
+import { red, transparent, white } from "../../style/colors";
 const styles = StyleSheet.create({
-
-    tab_bar_style:{
+    container: {
         flex: 1,
-        backgroundColor: red,
-    }
-
+        backgroundColor: white,
+    },
 });
 export default styles;
