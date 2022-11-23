@@ -47,6 +47,14 @@ const Map = () => {
             .then((response) => response.json()) //json formatına çevir
             .then((json) => {
                 setPharmacies(json.data); //json'dan gelen data'yı pharmacies'e gönder
+               json.data.map((item) => { //json'dan gelen data'yı map ile dön
+                    setRegion({ //region'a gelen data'yı gönder ve haritada odak noktasını güncelle
+                        latitude: item.latitude, 
+                        longitude: item.longitude,
+                        latitudeDelta: 0.02,
+                        longitudeDelta: 0.02,
+                    });
+                })
             })
             .catch((error) => {
                 console.error(error);
