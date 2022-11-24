@@ -1,7 +1,6 @@
 import { StyleSheet } from "react-native";
-import { red, transparent, white } from "../../style/colors";
-import { height, width, SfontSize, MfontSize, LfontSize, XLfontSize } from "../../style/dimensions";
-
+import { red, white } from "../../style/colors";
+import { height, width, MfontSize, LfontSize, XLfontSize } from "../../style/dimensions";
 
 const styles = StyleSheet.create({
     container: {
@@ -125,9 +124,5 @@ const styles = StyleSheet.create({
         fontSize: MfontSize,
         color: red,
     },
-
-
-
-
 });
 export default styles;
